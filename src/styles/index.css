@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+@import './animations.css';
+
+.Typewriter {
+  display: inline;
+}
+
+@theme {
+  --color-background: #24273a;
+  --color-popover: rgba(24, 25, 38, 0.65);
+  --color-card: rgba(54, 58, 79, 0.45);
+  --color-border: #494d64;
+  --color-foreground: #cad3f5;
+  --color-muted-foreground: #a5adcb;
+  --color-primary: #c6a0f6;
+  --color-secondary: #f5bde6;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'Cascadia Code', monospace;
+
+  --text-hero: clamp(48px, 8vw, 112px);
+  --text-tagline: clamp(14px, 2vw, 19px);
+  --text-section-title: clamp(30px, 4vw, 46px);
+  --text-footer-title: clamp(28px, 4vw, 42px);
+
+  --animate-drift-1: drift-1 14s ease-in-out infinite;
+  --animate-drift-2: drift-2 16s ease-in-out infinite;
+  --animate-shimmer-nav: shimmer 7s linear infinite;
+  --animate-shimmer-footer: shimmer 9s linear infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-fade-up: fade-up 0.9s ease 80ms both;
+
+  --shadow-glow: 0 0 40px -8px rgb(198 160 246 / 0.35);
+}
+
+html,
+body {
+  background-color: var(--color-background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+[role='search'] input:focus-visible {
+  outline: none;
+}

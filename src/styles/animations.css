@@ -1,0 +1,58 @@
+/**
+ * custom property contract for pointer-driven effects, written directly to
+ * a ref'd element rather than through React state:
+ *
+ * --card-tilt-magnitude   project card, 0 to 1   set by project-card.tsx's onMove handler
+ */
+
+@keyframes drift-1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, -40px) scale(1.08);
+  }
+}
+
+@keyframes drift-2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-70px, 50px) scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@property --card-tilt-magnitude {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
