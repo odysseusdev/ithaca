@@ -53,7 +53,7 @@ export function ProjectsSearchInput({
         value={value}
         onChange={handleChange}
         placeholder="search by name or tag"
-        className="w-full border-none bg-transparent font-mono text-sm outline-none placeholder:text-muted-foreground"
+        className="w-full border-none bg-transparent font-mono text-base outline-none placeholder:text-muted-foreground sm:text-sm"
       />
       {value.length > 0 && (
         <button

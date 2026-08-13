@@ -24,12 +24,12 @@ export function ProjectCardImage({ image }: ProjectCardImageProps): ReactElement
     <>
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 mask-[linear-gradient(to_left,#000_0%,#000_30%,transparent_78%)] bg-cover bg-position-[right_center]"
+        className="pointer-events-none absolute inset-0 mask-[linear-gradient(to_left,#000_0%,#000_32px,transparent_148px)] bg-size-[auto_100%] bg-position-[right_center]"
         style={{ backgroundImage }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#2c2f45_0%,#2c2f45_48%,rgba(44,47,69,0.55)_65%,transparent_88%)]"
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#2c2f45_0px,#2c2f45_32px,rgba(44,47,69,0.55)_96px,transparent_148px)]"
       />
     </>
   );

@@ -19,6 +19,7 @@ export const projects: readonly Project[] = [
       live: 'https://hephaestus.odysseusdev.io/',
       source: 'https://github.com/odysseusdev/hephaestus',
     },
+    image: '/projects/hephaestus.png',
   },
   {
     name: 'ithaca',
@@ -28,6 +29,7 @@ export const projects: readonly Project[] = [
       live: 'https://odysseusdev.io/',
       source: 'https://github.com/odysseusdev/ithaca',
     },
+    image: '/projects/ithaca.png',
   },
   {
     name: 'reel close',
@@ -36,6 +38,7 @@ export const projects: readonly Project[] = [
     urls: {
       live: 'https://reelclose.odysseusdev.io/',
     },
+    image: '/projects/reelclose.png',
   },
   {
     name: 'virgil',
@@ -44,5 +47,6 @@ export const projects: readonly Project[] = [
     urls: {
       source: 'https://github.com/odysseusdev/virgil',
     },
+    image: '/projects/virgil.png',
   },
 ];
